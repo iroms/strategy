@@ -1,0 +1,23 @@
+#!/usr/bin/env php
+<?php
+
+    use Iroms\Strategy\Calculator;
+
+    require __DIR__ . '/vendor/autoload.php';
+
+    $plus  = new Calculator("+");
+    $sub   = new Calculator("-");
+    $multy = new Calculator("*");
+    $div   = new Calculator("/");
+
+    $a = 43;
+    $b = 96;
+
+    echo $plus->calc($a, $b);
+    echo "\n";
+    echo $sub->calc($a, $b);
+    echo "\n";
+    echo $multy->calc($a, $b);
+    echo "\n";
+    echo $div->calc($a, $b);
+    echo "\n";
